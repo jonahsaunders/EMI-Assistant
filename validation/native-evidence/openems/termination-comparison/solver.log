@@ -1,0 +1,32 @@
+ ---------------------------------------------------------------------- 
+ | openEMS 64bit -- version v0.0.35
+ | (C) 2010-2018 Thorsten Liebig <thorsten.liebig@gmx.de>  GPL license
+ ---------------------------------------------------------------------- 
+	Used external libraries:
+		CSXCAD -- Version: v0.6.2
+		hdf5   -- Version: 1.10.8
+		          compiled against: HDF5 library version: 1.10.8
+		tinyxml -- compiled against: 2.6.2
+		fparser
+		boost  -- compiled against: 1_74
+		vtk -- Version: 9.1.0
+		       compiled against: 9.1.0
+
+openEMS - fixed number of threads: 2
+openEMS - dump simulation statistics to 'openEMS_run_stats.txt' and 'openEMS_stats.txt'
+Create FDTD operator (compressed SSE + multi-threading)
+Operator::SetTimestepFactor: Setting timestep factor to 0.9
+FDTD simulation size: 71x37x23 --> 60421 FDTD cells 
+FDTD timestep is: 1.29078e-13 s; Nyquist rate: 1936 timesteps @2.00085e+09 Hz
+openEMS::SetupFDTD: Warning, the timestep seems to be very small --> long simulation. Check your mesh!?
+Excitation signal length is: 11098 timesteps (1.4325e-09s)
+Max. number of timesteps: 63481 ( --> 5.72004 * Excitation signal length)
+Create FDTD engine (compressed SSE + multi-threading)
+Running FDTD engine... this may take a while... grab a cup of coffee?!?
+[@        4s] Timestep:         4356 || Speed:   59.9 MC/s (1.008e-03 s/TS) || Energy: ~2.37e-14 (- 0.00dB)
+[@        8s] Timestep:         8228 || Speed:   54.3 MC/s (1.113e-03 s/TS) || Energy: ~1.03e-14 (- 9.65dB)
+[@       12s] Timestep:        12584 || Speed:   61.6 MC/s (9.816e-04 s/TS) || Energy: ~3.43e-16 (-24.41dB)
+[@       17s] Timestep:        17424 || Speed:   69.0 MC/s (8.751e-04 s/TS) || Energy: ~1.13e-16 (-29.25dB)
+[@       21s] Timestep:        22264 || Speed:   69.2 MC/s (8.726e-04 s/TS) || Energy: ~8.35e-17 (-30.55dB)
+Time for 22264 iterations with 60421.00 cells : 21.44 sec
+Speed: 62.75 MCells/s 

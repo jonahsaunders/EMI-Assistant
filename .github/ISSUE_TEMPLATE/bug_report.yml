@@ -1,0 +1,28 @@
+name: Report a problem
+description: Installation trouble, an unexpected finding, or a simulation problem.
+title: '[Bug] '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe what you clicked and what you expected to see.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: 'Windows 11, KiCad 10.0.6, EMI Assistant 0.2.0'
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: A small example board is helpful if you can share it.
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Error message or screenshot
+      description: Include the displayed error or relevant solver/setup log. Remove private project information and credentials before posting.

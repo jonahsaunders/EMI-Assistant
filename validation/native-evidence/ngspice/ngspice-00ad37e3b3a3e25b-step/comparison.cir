@@ -1,0 +1,21 @@
+EMI Assistant generated passive step comparison
+Vinput vin 0 PULSE(0 1 0.000233817386848 1.16908693424e-06 1.16908693424e-06 0.0233817386848 0.0350726080272)
+Rsourceb vin nb 50
+Rdcrb nb lb .1
+Lstageb lb base 1e-05
+Rloadb base 0 50
+Rb0 base nb0 0.03
+Lb0 nb0 mb0 8e-10
+Cb0 mb0 0 2.2e-05
+Rsourcec vin nc 50
+Rextrac nc mc 22
+Rdcrc mc lc .1
+Lstagec lc candidate 1e-05
+Rloadc candidate 0 50
+Rc0 candidate nc0 0.03
+Lc0 nc0 mc0 8e-10
+Cc0 mc0 0 2.2e-05
+.options numdgt=15 reltol=0.00001
+.save v(base) v(candidate)
+.tran 7.30679333901e-06 0.0116908693424 0 7.30679333901e-06
+.end

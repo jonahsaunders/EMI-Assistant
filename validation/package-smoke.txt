@@ -1,0 +1,8 @@
+Release 0.2.0 archive verification
+KiCad PCM v1, PCM v2 and IPC manifest schemas passed during build.
+Saved package-smoke/report.json
+Python 3.11 compiled 39 packaged Python files
+Installed modules imported from archive, version 0.2.0
+Layout-only CLI produced 5 findings and no simulation run.
+Zip integrity and dependency payload checks passed.
+Native Windows/KiCad execution remains unverified.

@@ -1,0 +1,34 @@
+{
+  "id": "ngspice-00ad37e3b3a3e25b",
+  "engine": "ngspice",
+  "title": "Passive LC stage: L1",
+  "status": "needs_information",
+  "summary": "",
+  "assumptions": [
+    "Isolated small-signal stage from SW through L1 to +5V; source 50 ohm and load 50 ohm are assumptions.",
+    "Nominal component values, capacitor ESR 0.03 ohm and ESL 0.8 nH; connections treated as ideal.",
+    "Comparison adds 22 ohm in series with L1.",
+    "All other connected circuitry is omitted; this is a local topology experiment, not full-circuit simulation.",
+    "Inductor uses an ideal inductance and assumed 0.1 ohm winding resistance; self-resonance and saturation are unknown."
+  ],
+  "missing": [],
+  "warnings": [
+    "Compare attenuation only within the frequency range where these lumped component assumptions are valid.",
+    "Added resistance can cause DC voltage drop, heating and slower signals; load current and timing must be checked before applying.",
+    "This does not predict regulator stability, switching waveforms or radiated emissions.",
+    "Full IC and custom behavioral models are not executed. A completed passive comparison does not validate the whole circuit or any custom IC model."
+  ],
+  "metrics": [],
+  "series": [],
+  "recommendations": [],
+  "item_ids": [
+    "f66904a9-0cd5-4050-93b0-1cc799259e42",
+    "a4f93f6b-5ef2-4f8d-b7a9-aa319709e117",
+    "ba9d0f80-31fa-44b2-9018-d4001d4420ad",
+    "fb44388f-af2a-4c02-86e6-4ada837ee39b"
+  ],
+  "location": [
+    80.5,
+    60.0
+  ]
+}

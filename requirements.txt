@@ -1,0 +1,2 @@
+# KiCad registers the stdlib-only launcher without downloading UI libraries.
+# First launch prepares runtime-requirements.txt with visible progress and errors.

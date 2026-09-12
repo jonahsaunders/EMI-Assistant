@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kicad-emi-assistant"
+version = "0.2.1"
+description = "One-click KiCad EMI screening with scoped ngspice and openEMS comparisons"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["kicad-python==0.8.0", "PySide6-Essentials>=6.8,<7", "shapely>=2.0,<3", "numpy>=1.26,<3", "py7zr>=1.0,<2"]
+
+[project.scripts]
+emi-assistant = "emi_assistant.__main__:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "jsonschema>=4,<5"]
+
+[tool.setuptools.packages.find]
+include = ["emi_assistant*"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "LICENSES/*.txt"]
+
+[tool.setuptools.package-data]
+emi_assistant = ["data/examples/*.kicad_pcb", "data/examples/*.json", "data/licenses/*"]

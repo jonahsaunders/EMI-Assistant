@@ -1,0 +1,26 @@
+EMI Assistant 0.2.1 license and packaging patch
+Date: 2026-09-12
+
+Automated suite: 287 passed, 5 skipped, 43 subtests passed.
+The optional native-solver tests were not enabled in this invocation.
+Earlier actual solver evidence is preserved in the existing validation files.
+No numerical model changes are included in this patch.
+
+Licenses UI and related interaction checks: 18 tests and 9 subtests passed.
+The license window was rendered and visually inspected offscreen with Qt.
+
+Built kicad_emi_assistant-0.2.1-py3-none-any.whl using pip wheel --no-deps.
+Extracted the wheel, compared all six packaged license documents byte-for-byte
+with their source copies, and loaded each through the installed offline reader.
+Result: passed.
+
+Compiled licensing.py, ui.py, and tools/build_package.py with native Python
+3.11. Result: passed. Build also checks Python 3.10-compatible syntax.
+
+The KiCad package builder validates its metadata against all three unmodified
+upstream schemas and verifies the required license and application payload.
+The exact upstream schema hashes and license-text hashes are recorded in
+validation/schemas/README.md and LICENSES/README.md.
+
+This is software/package verification, not a legal certification or a native
+Windows/KiCad installation test.

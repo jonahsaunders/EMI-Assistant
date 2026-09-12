@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openEMS>
+  <FDTD NumberOfTimesteps="63481" endCriteria="0.001" OverSampling="4" TimeStepFactor=".9">
+    <Excitation Type="0" f0="0" fc="2000000000" />
+    <BoundaryCond xmin="PML_8" xmax="PML_8" ymin="PML_8" ymax="PML_8" zmin="PEC" zmax="PML_8" />
+  </FDTD>
+  <ContinuousStructure CoordSystem="0">
+    <RectilinearGrid DeltaUnit=".001" CoordSystem="0">
+      <XLines Qty="71">-5,-4.5,-4,-3.5,-3,-2.5,-2,-1.5,-1,-0.5,0,0.5,1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,13.5,14,14.5,15,15.5,16,16.5,17,17.5,18,18.5,19,19.5,20,20.5,21,21.5,22,22.5,23,23.5,24,24.5,25,25.5,26,26.5,27,27.5,28,28.5,29,29.5,30</XLines>
+      <YLines Qty="37">-4.718712925,-4.318712925,-3.918712925,-3.518712925,-3.118712925,-2.718712925,-2.318712925,-1.918712925,-1.518712925,-1.15670225,-0.8782325,-0.664025,-0.49925,-0.3725,-0.275,-0.2,-0.125,-0.0625,0,0.0625,0.125,0.2,0.275,0.3725,0.49925,0.664025,0.8782325,1.15670225,1.518712925,1.918712925,2.318712925,2.718712925,3.118712925,3.518712925,3.918712925,4.318712925,4.718712925</YLines>
+      <ZLines Qty="23">0,0.05,0.1,0.15,0.2,0.25,0.315,0.3995,0.50935,0.652155,0.8378015,1.07914195,1.392884535,1.8007498955,2.33097486415,2.99764153082,3.66430819748,4.33097486415,4.99764153082,5.66430819748,6.33097486415,6.99764153082,7.66430819748</ZLines>
+    </RectilinearGrid>
+    <Properties>
+      <Material Name="substrate" Isotropy="1">
+        <Property Epsilon="4.2" Kappa="0.00116828255822" />
+        <Primitives>
+          <Box Priority="0">
+            <P1 X="-5" Y="-4.718712925" Z="0" />
+            <P2 X="30" Y="4.718712925" Z="0.2" />
+          </Box>
+        </Primitives>
+      </Material>
+      <Metal Name="signal_trace">
+        <Primitives>
+          <Box Priority="10">
+            <P1 X="0" Y="-0.15" Z="0.2" />
+            <P2 X="25" Y="0.15" Z="0.2" />
+          </Box>
+        </Primitives>
+      </Metal>
+      <LumpedElement Name="port_resist_1" Direction="2" Caps="1" R="50">
+        <Primitives>
+          <Box Priority="20">
+            <P1 X="0" Y="-0.15" Z="0" />
+            <P2 X="1" Y="0.15" Z="0.2" />
+          </Box>
+        </Primitives>
+      </LumpedElement>
+      <Excitation Name="port_excite_1" Type="0" Excite="0,0,-1" Enabled="1">
+        <Primitives>
+          <Box Priority="20">
+            <P1 X="0" Y="-0.15" Z="0" />
+            <P2 X="1" Y="0.15" Z="0.2" />
+          </Box>
+        </Primitives>
+      </Excitation>
+      <ProbeBox Name="port_ut_1" Type="0" Weight="-1">
+        <Primitives>
+          <Box Priority="0">
+            <P1 X="0.5" Y="0" Z="0" />
+            <P2 X="0.5" Y="0" Z="0.2" />
+          </Box>
+        </Primitives>
+      </ProbeBox>
+      <ProbeBox Name="port_it_1" Type="1" Weight="1" NormDir="2">
+        <Primitives>
+          <Box Priority="0">
+            <P1 X="0" Y="-0.15" Z="0.1" />
+            <P2 X="1" Y="0.15" Z="0.1" />
+          </Box>
+        </Primitives>
+      </ProbeBox>
+      <LumpedElement Name="port_resist_2" Direction="2" Caps="1" R="72">
+        <Primitives>
+          <Box Priority="20">
+            <P1 X="24" Y="-0.15" Z="0" />
+            <P2 X="25" Y="0.15" Z="0.2" />
+          </Box>
+        </Primitives>
+      </LumpedElement>
+      <ProbeBox Name="port_ut_2" Type="0" Weight="-1">
+        <Primitives>
+          <Box Priority="0">
+            <P1 X="24.5" Y="0" Z="0" />
+            <P2 X="24.5" Y="0" Z="0.2" />
+          </Box>
+        </Primitives>
+      </ProbeBox>
+      <ProbeBox Name="port_it_2" Type="1" Weight="1" NormDir="2">
+        <Primitives>
+          <Box Priority="0">
+            <P1 X="24" Y="-0.15" Z="0.1" />
+            <P2 X="25" Y="0.15" Z="0.1" />
+          </Box>
+        </Primitives>
+      </ProbeBox>
+    </Properties>
+  </ContinuousStructure>
+</openEMS>

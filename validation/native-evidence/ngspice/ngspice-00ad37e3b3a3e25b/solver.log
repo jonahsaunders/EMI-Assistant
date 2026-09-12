@@ -1,0 +1,11 @@
+stderr Note: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-42 shared library
+stdout ** Creation Date: Sun Mar 31 20:15:14 UTC 2024
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: emi assistant generated passive comparison
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stderr Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 123
+stdout ASCII raw file "result.raw"

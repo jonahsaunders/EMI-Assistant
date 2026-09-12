@@ -1,0 +1,48 @@
+{
+  "findings": 5,
+  "rules": [
+    "reference_gap",
+    "return_via",
+    "switching_loop",
+    "switch_copper",
+    "decoupling_path"
+  ],
+  "elapsed_ms": 8.124343000417866,
+  "coverage": [
+    {
+      "rule": "reference_gap",
+      "status": "checked",
+      "detail": "Screened 2 fast-net trace segments; 0 lacked a usable adjacent or annotated filled reference. Copper-neck inductance, non-ground references, and field distribution are not solved."
+    },
+    {
+      "rule": "return_via",
+      "status": "checked",
+      "detail": "Screened 1 reference-changing transitions; 0 share an adjacent reference; 0 lack usable local reference data. Plated ground pads also count as return connections."
+    },
+    {
+      "rule": "decoupling_path",
+      "status": "partial",
+      "detail": "0 capacitor/IC pairs had explicit supply and ground routes; 2 pairs were unresolved or partly plane-mediated. Automatic associations use U/C prefixes and schematic power pins or power-net names. The shortest candidate per IC/supply net is screened; individual multi-supply-pin loops and internal package connections are outside coverage."
+    },
+    {
+      "rule": "switching_loop",
+      "status": "partial",
+      "detail": "0 topology-selected capacitor pairs had explicit routes; 1 regulator annotations/hints need topology, capacitor, pin-role or connection detail. Unrecognized converters and discrete rectifier loops are not automatically solved."
+    },
+    {
+      "rule": "switch_copper",
+      "status": "partial",
+      "detail": "Switch-node area is screened only where a switch net and buck/boost topology are identified; thermal suitability and radiation are not calculated."
+    },
+    {
+      "rule": "coupling",
+      "status": "partial",
+      "detail": "Screened 2 candidate sensitive/cable track segments for close parallel same-layer routing. Filter topology, broadside coupling and differential imbalance are outside coverage."
+    },
+    {
+      "rule": "board_data",
+      "status": "partial",
+      "detail": "Saved zone fill freshness cannot be established from file contents; refill zones in KiCad before relying on plane checks."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Prepared automatically on first launch inside KiCad's plugin environment.
+kicad-python==0.8.0
+PySide6-Essentials>=6.8,<7
+shapely>=2.0,<3
+numpy>=1.26,<3
+py7zr>=1.0,<2

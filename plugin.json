@@ -1,0 +1,19 @@
+{
+  "$schema": "https://go.kicad.org/api/schemas/v1",
+  "identifier": "org.emi-assistant.kicad",
+  "name": "EMI Assistant",
+  "description": "Find likely EMI layout risks, highlight evidence, and plan measurements from your PCB editor.",
+  "runtime": {"type": "python", "min_version": "3.10"},
+  "actions": [
+    {
+      "identifier": "analyze-emi",
+      "name": "Analyze EMI",
+      "description": "Analyze this board and see the most useful EMI improvements first.",
+      "show-button": true,
+      "scopes": ["pcb"],
+      "entrypoint": "launch.py",
+      "icons-light": ["resources/icon.png"],
+      "icons-dark": ["resources/icon.png"]
+    }
+  ]
+}

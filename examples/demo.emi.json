@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "fast_nets": {
+    "CLK24": {
+      "frequency_mhz": 24.0,
+      "rise_ns": 1.0,
+      "enabled": true
+    }
+  },
+  "reference_nets": [
+    "GND"
+  ],
+  "reference_layers": {
+    "F.Cu": [
+      "In1.Cu"
+    ],
+    "B.Cu": [
+      "In2.Cu"
+    ]
+  },
+  "external_connectors": [
+    "J1"
+  ],
+  "regulators": [
+    {
+      "reference": "U2",
+      "topology": "buck",
+      "input_cap": "C2",
+      "output_cap": "C3",
+      "switch_net": "SW",
+      "ground_net": "GND"
+    }
+  ],
+  "thresholds": {
+    "return_via_mm": 2.0,
+    "decoupling_path_mm": 5.0,
+    "switch_copper_mm2": 20.0
+  },
+  "ignored": {}
+}

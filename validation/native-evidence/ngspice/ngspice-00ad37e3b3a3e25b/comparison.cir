@@ -1,0 +1,21 @@
+EMI Assistant generated passive comparison
+Vinput vin 0 DC 0 AC 1
+Rsourceb vin nb 50
+Rdcrb nb lb .1
+Lstageb lb base 1e-05
+Rloadb base 0 50
+Rb0 base nb0 0.03
+Lb0 nb0 mb0 8e-10
+Cb0 mb0 0 2.2e-05
+Rsourcec vin nc 50
+Rextrac nc mc 22
+Rdcrc mc lc .1
+Lstagec lc candidate 1e-05
+Rloadc candidate 0 50
+Rc0 candidate nc0 0.03
+Lc0 nc0 mc0 8e-10
+Cc0 mc0 0 2.2e-05
+.options numdgt=15
+.save v(base) v(candidate)
+.ac dec 33 100000 500000000
+.end

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v2",
+  "name": "EMI Assistant",
+  "description": "One-click EMI layout screening with ngspice passive-circuit and openEMS local transmission-line comparisons.",
+  "description_full": "A native desktop companion launched by Analyze EMI in KiCad. Layout findings appear first while supported ngspice capacitor-impedance, RC/LC transfer and LC ringing comparisons and openEMS local straight-microstrip reflection/load-transfer models run in the background. Shows assumptions, missing inputs, solver evidence and cached results. Windows x64 automatically prepares missing private solver runtimes from verified official archives. Includes source and tests. Models are scoped engineering comparisons, not whole-board emissions or compliance predictions. Native Windows/KiCad and hardware validation remain pending. Install this ZIP from KiCad Plugin and Content Manager.",
+  "identifier": "org.emi-assistant.kicad",
+  "type": "plugin",
+  "author": {"name": "EMI Assistant contributors", "contact": {}},
+  "license": "MIT",
+  "resources": {},
+  "versions": [{"version": "0.2.1", "status": "testing", "kicad_version": "10.0", "kicad_version_max": "10.0", "runtime": "ipc"}]
+}

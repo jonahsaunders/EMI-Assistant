@@ -1,0 +1,5 @@
+Command: python -m pytest tests/test_packaging.py -q
+Actual upstream PCM v1/v2 and IPC schemas; no native KiCad available
+
+......                                                                   [100%]
+6 passed in 0.20s

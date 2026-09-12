@@ -1,0 +1,29 @@
+# Python and local development environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+pytest-of-*/
+pip-*/
+
+# Generated builds; the tested installer is intentionally kept in downloads/.
+build/
+dist/
+
+# Local credentials, editor files, and board measurements
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+EMI-first-launch.log
+*.emi-measurements.json
+*.kicad_prl
+*-backups/
+~*.lck

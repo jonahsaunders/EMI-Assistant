@@ -1,0 +1,18 @@
+EMI Assistant generated passive comparison
+Ibase 0 base DC 0 AC 1
+Icandidate 0 candidate DC 0 AC 1
+Rdcbase base 0 1e12
+Rdccandidate candidate 0 1e12
+Rb0 base nb0 0.03
+Lb0 nb0 mb0 5.4121980674e-09
+Cb0 mb0 0 1e-07
+Rc0 candidate nc0 0.03
+Lc0 nc0 mc0 5.4121980674e-09
+Cc0 mc0 0 1e-07
+Rextra candidate nextra 0.03
+Lextra nextra mextra 1.5e-09
+Cextra mextra 0 1e-07
+.options numdgt=15
+.save v(base) v(candidate)
+.ac dec 33 100000 500000000
+.end

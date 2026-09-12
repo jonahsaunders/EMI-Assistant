@@ -1,0 +1,32 @@
+stderr Note: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-42 shared library
+stdout ** Creation Date: Sun Mar 31 20:15:14 UTC 2024
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: emi assistant generated passive step comparison
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stderr Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vin                                          0
+stdout nb                                           0
+stdout lb                                           0
+stdout base                                         0
+stdout nb0                                          0
+stdout mb0                                          0
+stdout nc                                           0
+stdout mc                                           0
+stdout lc                                           0
+stdout candidate                                    0
+stdout nc0                                          0
+stdout mc0                                          0
+stdout lc0#branch                                   0
+stdout lstagec#branch                               0
+stdout lb0#branch                                   0
+stdout lstageb#branch                               0
+stdout vinput#branch                                0
+stdout No. of Data Rows : 1682
+stdout ASCII raw file "result.raw"

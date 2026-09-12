@@ -1,0 +1,45 @@
+{
+  "id": "ngspice-3a33fe1494046e88",
+  "engine": "ngspice",
+  "title": "Shunt-capacitor impedance: +3V3",
+  "status": "needs_information",
+  "summary": "",
+  "assumptions": [
+    "Small-signal 1 A AC current at U1 pad 1; voltage magnitude equals impedance in ohms.",
+    "Nominal capacitor values; each capacitor has assumed ESR 0.03 ohm and ESL 0.8 nH.",
+    "Connection inductance uses a rough 0.7 nH/mm rule of thumb; it is not a field-extracted parasitic model.",
+    "Only the listed capacitor branches are modeled; regulator, IC, plane spreading, shared-path coupling and cable impedances are omitted.",
+    "Comparison adds 100 nF at the port with an assumed 1 mm connection and the same ESR/ESL.",
+    "C1: measured signal route 1.79 mm; return distance estimated at 4.8 mm (plane/current path unresolved)."
+  ],
+  "missing": [],
+  "warnings": [
+    "Estimated passive-network impedance, not radiated emissions or a compliance result.",
+    "DC bias, capacitor tolerances and frequency-dependent losses are not characterized.",
+    "Full IC and custom behavioral models are not executed. A completed passive comparison does not validate the whole circuit or any custom IC model."
+  ],
+  "metrics": [
+    {
+      "name": "Modeled capacitor branches",
+      "value": 1,
+      "unit": "count"
+    },
+    {
+      "name": "Longest modeled connection",
+      "value": 6.588854381999829,
+      "unit": "mm"
+    }
+  ],
+  "series": [],
+  "recommendations": [],
+  "item_ids": [
+    "1966758d-720b-4788-ab94-bf33137f87d3",
+    "22b5894e-02a7-4bb5-9ee8-ae7db1fc6f25",
+    "65d8098d-ccfc-47ce-bc48-8d529f6d2ab7",
+    "fa70213c-8aaf-4d8f-9d6d-9377a388260e"
+  ],
+  "location": [
+    27.0,
+    38.0
+  ]
+}
