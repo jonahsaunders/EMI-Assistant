@@ -63,9 +63,19 @@ These are results for the stated example model, not measured PCB emissions.
 `validation/native-evidence/` includes the actual generated solver inputs, logs
 and output data. Paths in this summary and `docs/example-simulation-report.html`
 are relative to the installed plugin directory. The simulation screenshot in
-`docs/screenshots/simulations.png` was rendered in Qt using the real cached
-results; the automatically launched background worker completed without
-blocking the window.
+`docs/screenshots/simulations.png` is rendered in Qt using the recorded results
+from `validation/simulation-summary.json`. Regenerate it after installing the
+development dependencies with:
+
+```sh
+QT_QPA_PLATFORM=offscreen python tools/capture_simulation_screenshot.py
+```
+
+The capture waits for the card layout to settle and checks that labels and
+charts fit before saving. It shows the first result at a readable size; the
+remaining results are available by scrolling. This replays the recorded solver
+evidence without launching new solvers and is not a new solver or native KiCad
+validation run.
 
 The official Windows portable downloads are ngspice 47 and openEMS 0.0.36.
 Their archive hashes and contents were verified, but those Windows binaries and
